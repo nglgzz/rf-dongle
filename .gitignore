@@ -1,0 +1,7 @@
+# Autosaved files
+\#auto_saved_files\#
+_autosave-dongle.*
+rf-dongle-backups
+
+# Lock files
+~rf-dongle.*.lck
