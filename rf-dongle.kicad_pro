@@ -255,12 +255,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "unconnected_wire_endpoint|3162300|1371600|7ec7e252-eb8d-4317-b597-0aae1f6f9ae3|00000000-0000-0000-0000-000000000000|/2e413e6d-2043-4496-9952-aaa6272cc89e||",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -491,7 +486,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -502,26 +497,42 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.15,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
+        "clearance": 0.15,
+        "name": "Low_Clearance",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.145
+      },
+      {
         "clearance": 0.2,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
-        "via_drill": 0.8
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.15,
+        "name": "Power_Low_Clearance",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25
       },
       {
         "clearance": 0.5,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1565,
         "via_diameter": 0.6,
@@ -532,19 +543,71 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "GND": [
+        "Low_Clearance"
+      ]
+    },
     "netclass_patterns": [
       {
         "netclass": "RF",
         "pattern": "/RF"
       },
       {
-        "netclass": "Power",
+        "netclass": "Power_Low_Clearance",
         "pattern": "/VBUS_nRF"
       },
       {
         "netclass": "Power",
         "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VEXT"
+      },
+      {
+        "netclass": "Low_Clearance",
+        "pattern": "/XL1"
+      },
+      {
+        "netclass": "Low_Clearance",
+        "pattern": "/XL2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/DEC4_6"
+      },
+      {
+        "netclass": "Power_Low_Clearance",
+        "pattern": "/DEC1"
+      },
+      {
+        "netclass": "Power_Low_Clearance",
+        "pattern": "/DECUSB"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/DEC5"
+      },
+      {
+        "netclass": "Low_Clearance",
+        "pattern": "VSS_PA"
+      },
+      {
+        "netclass": "Low_Clearance",
+        "pattern": "/ANT"
+      },
+      {
+        "netclass": "Low_Clearance",
+        "pattern": "/VSS_PA"
+      },
+      {
+        "netclass": "Power_Low_Clearance",
+        "pattern": "/DEC2"
       }
     ]
   },

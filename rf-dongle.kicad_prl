@@ -48,7 +48,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_00000008_820022a7",
+    "visible_layers": "00000000_00000000_00000080_aa000005",
     "zone_display_mode": 0
   },
   "git": {
@@ -113,7 +113,9 @@
     "sort_ascending": true,
     "sorting_column": 0
   },
-  "open_jobsets": [],
+  "open_jobsets": [
+    "output.kicad_jobset"
+  ],
   "project": {
     "files": []
   },
