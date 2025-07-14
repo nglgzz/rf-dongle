@@ -54,27 +54,17 @@
 		)
 	)
 	(attr smd)
-	(fp_rect
-		(start -4.5 -6)
-		(end 9 6)
+	(fp_poly
+		(pts
+			(xy 9 -6) (xy -4.5 -6) (xy -4.5 6) (xy 9 6) (xy 9 4.5) (xy 4 4.5) (xy 4 -4.5) (xy 9 -4.5)
+		)
 		(stroke
-			(width 0.05)
-			(type default)
+			(width 0.1)
+			(type solid)
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "724c8444-1f72-498d-840b-0520b803a15a")
-	)
-	(fp_rect
-		(start 4 -4.5)
-		(end 9 4.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "F.CrtYd")
-		(uuid "8ba891c8-1c5f-4c46-b52f-37e78732d804")
+		(uuid "3759760a-3a32-40de-9899-75cebae5ad13")
 	)
 	(fp_text user "USB"
 		(at 4.5 -0.5 0)

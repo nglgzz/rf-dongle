@@ -63,7 +63,24 @@
           "width": 0.2
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|34490000|40900000|a44b4a08-a483-47ee-994b-0fd6ed7f68ba|6f17592d-6431-48c0-9fe0-dd123c6a801a",
+          ""
+        ],
+        [
+          "clearance|48162500|46147500|d7f32237-2bad-47d7-a1d7-80927ddb83af|cdae2f47-89e4-4349-ba8c-b71e90612933",
+          ""
+        ],
+        [
+          "items_not_allowed|49950000|49775000|3ceddcae-272b-4760-9279-672a9a539690|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|49950000|52675000|be5448e7-69d7-4797-ae12-68bfb13eac3b|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -143,7 +160,7 @@
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.6,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -229,12 +246,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.25,
-          "drill": 0.1
-        },
-        {
           "diameter": 0.3,
           "drill": 0.15
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.3
         },
         {
           "diameter": 0.6,
@@ -619,7 +636,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
