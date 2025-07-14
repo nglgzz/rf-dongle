@@ -48,7 +48,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_00000080_aa000005",
+    "visible_layers": "00000000_00000000_00000080_02000005",
     "zone_display_mode": 0
   },
   "git": {
@@ -90,6 +90,8 @@
       11
     ],
     "col_widths": [
+      0,
+      0,
       0,
       0,
       0,

@@ -5,3 +5,6 @@ rf-dongle-backups
 
 # Lock files
 ~rf-dongle.*.lck
+
+output
+gerber.zip
