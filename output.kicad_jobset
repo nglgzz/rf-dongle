@@ -85,6 +85,21 @@
     },
     {
       "description": "",
+      "id": "ec10644f-0cbf-4d83-9aed-70769bc948b0",
+      "settings": {
+        "description": "",
+        "fail_on_error": false,
+        "format": "report",
+        "output_filename": "drc_report",
+        "parity": true,
+        "report_all_track_errors": true,
+        "severity": 48,
+        "units": "mm"
+      },
+      "type": "pcb_drc"
+    },
+    {
+      "description": "",
       "id": "f8d584b9-16f8-4dd3-a550-b4172331d47a",
       "settings": {
         "description": "",
