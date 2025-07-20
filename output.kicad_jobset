@@ -41,7 +41,7 @@
       "description": "",
       "id": "11f2e9d0-7d16-4369-9f13-b8c1acb8553c",
       "settings": {
-        "bom_format_preset_name": "",
+        "bom_format_preset_name": "CSV",
         "bom_preset_name": "",
         "description": "",
         "exclude_dnp": true,
@@ -51,14 +51,16 @@
           "Footprint"
         ],
         "fields_labels": [
-          "Reference",
-          "Value",
+          "Designator",
+          "Comment",
           "Footprint",
           "Datasheet",
           "Description",
           "Qty",
           "#",
-          "Sim.Pins"
+          "Sim.Pins",
+          "LCSC Part Number",
+          "LCSC PN"
         ],
         "fields_ordered": [
           "Reference",
@@ -66,18 +68,20 @@
           "Footprint",
           "__Datasheet",
           "__Description",
-          "${QUANTITY}",
+          "__${QUANTITY}",
           "__${ITEM_NUMBER}",
-          "__Sim.Pins"
+          "__Sim.Pins",
+          "__JLC PN",
+          "__LCSC PN"
         ],
         "filter_string": "",
         "include_excluded_from_bom": false,
         "keep_line_breaks": false,
         "keep_tabs": false,
         "output_filename": "bom.csv",
-        "ref_delimiter": "",
+        "ref_delimiter": ",",
         "ref_range_delimiter": "",
-        "sort_asc": true,
+        "sort_asc": false,
         "sort_field": "Reference",
         "string_delimiter": "\""
       },
@@ -336,6 +340,25 @@
         "use_drill_origin": false
       },
       "type": "pcb_export_pdf"
+    },
+    {
+      "description": "",
+      "id": "f3a05595-a37a-4aca-a363-f2be470adf76",
+      "settings": {
+        "description": "",
+        "exclude_dnp": true,
+        "exclude_footprints_with_th": false,
+        "format": "csv",
+        "gerber_board_edge": true,
+        "negate_bottom_x": false,
+        "output_filename": "",
+        "side": "both",
+        "single_file": true,
+        "smd_only": false,
+        "units": "mm",
+        "use_drill_place_file_origin": true
+      },
+      "type": "pcb_export_pos"
     }
   ],
   "meta": {
