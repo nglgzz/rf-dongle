@@ -4035,19 +4035,6 @@
 		)
 		(uuid "92268123-93d4-43b5-8c2f-49de8cc7bade")
 	)
-	(text "BOM:\n\n- nRF52840 QIAA (aQFN),   NRF52840-QIAA-R7,    3.3474 EUR\n- 5v ESD protection,      PRTR5V0U2X-HXY,      0.0371 EUR\n? Cap. 50v 12pF  C0G 1%,  GJM1555C1H120FB01D,  0.0293 EUR\n? Cap. 50v 100nF X7R 10%, GRM155R71H104KE14D,  0.0026 EUR\n? Cap. 25v 10nF X7R 10%,  GRM155R71E103KA01D,  0.0014 EUR\n? Res. 62.5mW 2R2 1%,     0402WGF220KTCE,      0.0007 EUR\n? Res. 62.5mW 10k 1%,     0402WGF1002TCE,      0.0004 EUR\n- LED 20mA 35mcd 2V Yel., BL-HGE37A-AV-TRB,    0.0262 EUR\n- LED 20mA 50mcd 2V Red,  BL-HUB37A-AV-TRB,    0.0235 EUR \n- Res. 50mW 53.6 1%,      0201WMF536JTEE,      0.0008 EUR\n- Sw. 50mA 153gf,         B3U-1000P,           0.1294 EUR\n- Chip ant 2.4GHz 2.5dBi, ANT016008LCS2442MA2, 0.2121 EUR\n- Chip ant 2.4GHz 0.5dBi, 2450AT18A100E,       0.3929 EUR"
-		(exclude_from_sim no)
-		(at 287.274 200.152 0)
-		(effects
-			(font
-				(face "FreeMono")
-				(size 2.159 2.159)
-				(thickness 0.254)
-			)
-			(justify left)
-		)
-		(uuid "93819677-9c1c-4989-aac9-f860e279e8fa")
-	)
 	(text "Low Frequency Clock"
 		(exclude_from_sim no)
 		(at 65.786 94.742 0)
@@ -4096,9 +4083,9 @@
 		)
 		(uuid "b2600972-b944-4369-8ee3-d4ad71cdba2a")
 	)
-	(text "Most of the schematic is a direct copy of the reference \nschematic for the QFAA layout. The only exceptions are the \nLEDs, programming pins and reset button."
+	(text "Most of the schematic is a direct copy of the reference \nschematic for the QFAA layout. The only exceptions are the \nLEDs, programming pins and reset button. \n\nAlso I removed the C22 footprint to save space on the board, \nat the expense of not being able to tune the antenna after \nproducing the boards. Should probably revisit this at some point."
 		(exclude_from_sim no)
-		(at 300.736 244.856 0)
+		(at 299.72 240.792 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -4140,6 +4127,17 @@
 			)
 		)
 		(uuid "f6369b92-b9ea-4259-9962-758f739ce440")
+	)
+	(text "C9 not required for \nFxx and later"
+		(exclude_from_sim no)
+		(at 284.226 91.694 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "fc0f620d-9b25-44a9-bfaf-8b1df0f600df")
 	)
 	(text "High Frequency Clock"
 		(exclude_from_sim no)
@@ -6430,7 +6428,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" ""
+		(property "Mfr. No" "CX2016SA32000D0WRQG1"
+			(at 106.68 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 581-CX2016SA32DWRQG1"
 			(at 106.68 73.66 90)
 			(effects
 				(font
@@ -6655,6 +6662,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "0402X7R104KT7AT"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-0402X7R104KT7AT"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5414bdcb-6101-4f00-b35f-3dd7ed007c85")
 		)
@@ -6716,6 +6741,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 287.02 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "VJ0402D0R5VXBAJHT"
+			(at 287.02 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 77-VJ0402D0R5VXBAJHT"
 			(at 287.02 140.97 0)
 			(effects
 				(font
@@ -6801,7 +6844,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C165980"
+		(property "Mfr. No" "599-1A10-147F"
+			(at 238.76 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 645-599-1A10-147F"
 			(at 238.76 252.73 0)
 			(effects
 				(font
@@ -7078,6 +7130,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "04023U120GAT2A"
+			(at 90.17 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-04023U120GAT2A"
+			(at 90.17 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "20216177-f3ff-421a-b2f7-277422305e4a")
 		)
@@ -7347,6 +7417,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" " ERJ-U02F2R20X"
+			(at 139.7 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 667-ERJ-U02F2R20X"
+			(at 139.7 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2e812d50-a171-4f1e-8f13-de4d9a685116")
 		)
@@ -7448,7 +7536,7 @@
 				)
 			)
 		)
-		(property "Value" "NRF52840-QIAA-R7"
+		(property "Value" "NRF52840-QIAA-F-R"
 			(at 198.12 139.7 0)
 			(do_not_autoplace yes)
 			(effects
@@ -7484,7 +7572,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C1851953"
+		(property "Mfr. No" "nRF52840-QIAA-F-R"
+			(at 198.12 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "949-NRF52840QIAA-F-R"
 			(at 198.12 137.16 0)
 			(effects
 				(font
@@ -7845,7 +7942,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C5337179"
+		(property "Mfr. No" "PRTR5V0U2X,215 "
+			(at 101.6 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 771-PRTR5V0U2X-T/R"
 			(at 101.6 170.18 90)
 			(effects
 				(font
@@ -8083,7 +8189,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "72782358-9902-4068-96ef-21ae37e27e10")
 		(property "Reference" "C9"
 			(at 284.988 83.566 0)
@@ -8191,6 +8297,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 278.13 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "0402X7R104KT7AT"
+			(at 278.13 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-0402X7R104KT7AT"
 			(at 278.13 43.18 0)
 			(effects
 				(font
@@ -8536,6 +8660,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "06036C475KAT2A"
+			(at 264.16 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-06036C475KAT2A"
+			(at 264.16 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b03cd6d2-2be5-429e-a4ff-05e0ebf03fa6")
 		)
@@ -8596,6 +8738,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 91.44 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "04023U120GAT2A"
+			(at 91.44 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-04023U120GAT2A"
+			(at 91.44 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8664,6 +8824,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 292.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "0402X7R104KT7AT"
+			(at 292.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-0402X7R104KT7AT"
 			(at 292.1 43.18 0)
 			(effects
 				(font
@@ -8741,6 +8919,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "CM105X7R105K16ATH"
+			(at 320.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "346-CM105X7R105K16A"
+			(at 320.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b32ca7fc-ae7d-4570-a83f-7f1650d5c9c1")
 		)
@@ -8802,6 +8998,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 152.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "C1608X7S1A475K080AC"
+			(at 152.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 810-C1608X7S1A475KAC"
 			(at 152.4 45.72 0)
 			(effects
 				(font
@@ -9011,6 +9225,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "ESR01MZPF1002"
+			(at 113.03 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "755-ESR01MZPF1002"
+			(at 113.03 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3f543f1d-d8bd-4319-9776-12b1375bb8f2")
 		)
@@ -9145,6 +9377,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "04023U120GAT2A"
+			(at 90.17 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-04023U120GAT2A"
+			(at 90.17 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b2ef5521-22fa-4541-8aa7-ebda5002008c")
 		)
@@ -9205,6 +9455,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "04023U120GAT2A"
+			(at 91.44 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-04023U120GAT2A"
+			(at 91.44 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9273,6 +9541,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 261.62 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "VJ0402D0R8VXBAJHT"
+			(at 261.62 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 77-VJ0402D0R8VXBAJHT"
 			(at 261.62 140.97 0)
 			(effects
 				(font
@@ -9420,7 +9706,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C89334"
+		(property "Mfr. No" "2450AT18A0100001E"
+			(at 317.5 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "609-2450AT18A0100001"
 			(at 317.5 134.62 0)
 			(effects
 				(font
@@ -9497,7 +9792,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C784160"
+		(property "Mfr. No" " ESR01MZPF56R0"
+			(at 228.6 252.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "755-ESR01MZPF56R0"
 			(at 228.6 252.73 90)
 			(effects
 				(font
@@ -9642,6 +9946,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "06036C475KAT2A"
+			(at 265.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-06036C475KAT2A"
+			(at 265.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90a0567e-c337-45ef-87f0-9d9ae82c157c")
 		)
@@ -9710,7 +10032,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C231329"
+		(property "Mfr. No" " B3U-1000P"
+			(at 101.6 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 653-B3U-1000P"
 			(at 101.6 262.89 0)
 			(effects
 				(font
@@ -9796,7 +10127,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C165979"
+		(property "Mfr. No" "599-1A40-147F"
+			(at 238.76 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 645-599-1A40-147F"
 			(at 238.76 265.43 0)
 			(effects
 				(font
@@ -10007,6 +10347,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "MCL1005-4R7-R"
+			(at 279.4 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" " 504-MCL1005-4R7-R"
+			(at 279.4 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "242a1f18-4c53-444c-9159-a832b7b93ce1")
 		)
@@ -10074,7 +10432,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C97603"
+		(property "Mfr. No" "ABS06N-32.768kHz-9-T"
+			(at 107.95 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "815-ABS06N32768KHZ9T"
 			(at 107.95 111.76 90)
 			(effects
 				(font
@@ -10142,6 +10509,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 331.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "04026A101JAT2A"
+			(at 331.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-04026A101JAT2A"
 			(at 331.47 69.85 0)
 			(effects
 				(font
@@ -10418,6 +10803,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "0402X7R104KT7AT"
+			(at 360.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "581-0402X7R104KT7AT"
+			(at 360.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "19f45daf-be34-41bd-9118-b301397fde93")
 		)
@@ -10486,7 +10889,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLC PN" "C784160"
+		(property "Mfr. No" " ESR01MZPF56R0"
+			(at 228.6 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "755-ESR01MZPF56R0"
 			(at 228.6 265.43 90)
 			(effects
 				(font
@@ -10623,6 +11035,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 317.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "CM105X7R105K16ATH"
+			(at 317.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "346-CM105X7R105K16A"
 			(at 317.5 80.01 0)
 			(effects
 				(font

@@ -48,7 +48,8 @@
         "field_delimiter": ",",
         "fields_group_by": [
           "Value",
-          "Footprint"
+          "Footprint",
+          "Mfr. No"
         ],
         "fields_labels": [
           "Designator",
@@ -56,11 +57,11 @@
           "Footprint",
           "Datasheet",
           "Description",
-          "Qty",
           "#",
           "Sim.Pins",
-          "LCSC Part Number",
-          "LCSC PN"
+          "Mouser No",
+          "Mfr. No",
+          "Qty"
         ],
         "fields_ordered": [
           "Reference",
@@ -68,11 +69,11 @@
           "Footprint",
           "__Datasheet",
           "__Description",
-          "__${QUANTITY}",
           "__${ITEM_NUMBER}",
           "__Sim.Pins",
-          "__JLC PN",
-          "__LCSC PN"
+          "Mouser No",
+          "Mfr. No",
+          "${QUANTITY}"
         ],
         "filter_string": "",
         "include_excluded_from_bom": false,
@@ -81,8 +82,8 @@
         "output_filename": "bom.csv",
         "ref_delimiter": ",",
         "ref_range_delimiter": "",
-        "sort_asc": false,
-        "sort_field": "Reference",
+        "sort_asc": true,
+        "sort_field": "${ITEM_NUMBER}",
         "string_delimiter": "\""
       },
       "type": "sch_export_bom"
