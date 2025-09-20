@@ -60,10 +60,27 @@
         {
           "gap": 0.3,
           "via_gap": 0.5,
-          "width": 0.2
+          "width": 0.1735
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|48300000|46560000|d7f32237-2bad-47d7-a1d7-80927ddb83af|cdae2f47-89e4-4349-ba8c-b71e90612933",
+          ""
+        ],
+        [
+          "clearance|50245000|45445000|afc27a73-0310-4d50-93b7-c55f118e460a|7d1b14d5-185e-4d1c-95c3-ac123f38dbb2",
+          ""
+        ],
+        [
+          "items_not_allowed|56400000|39750000|be5448e7-69d7-4797-ae12-68bfb13eac3b|00000000-0000-0000-0000-000000000000",
+          "Antenna is the only exception to this rule"
+        ],
+        [
+          "items_not_allowed|56400000|42650000|3ceddcae-272b-4760-9279-672a9a539690|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -473,6 +490,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -491,9 +509,9 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.3,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.3,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -510,7 +528,7 @@
         "clearance": 0.15,
         "name": "Low_Clearance",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.145
       },
@@ -518,7 +536,7 @@
         "clearance": 0.2,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
@@ -528,7 +546,7 @@
         "clearance": 0.15,
         "name": "Power_Low_Clearance",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25
       },
@@ -536,11 +554,19 @@
         "clearance": 0.5,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1565,
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "diff_pair_gap": 0.3,
+        "diff_pair_width": 0.1735,
+        "name": "USB_Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -612,6 +638,14 @@
       {
         "netclass": "Power_Low_Clearance",
         "pattern": "/DEC2"
+      },
+      {
+        "netclass": "USB_Data",
+        "pattern": "D+"
+      },
+      {
+        "netclass": "USB_Data",
+        "pattern": "D-"
       }
     ]
   },
