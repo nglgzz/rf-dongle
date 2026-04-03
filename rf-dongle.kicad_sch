@@ -909,6 +909,26 @@
 					(hide yes)
 				)
 			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "quartz ceramic resonator oscillator"
 				(at 0 0 0)
 				(effects
@@ -989,18 +1009,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -1056,9 +1064,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 5.08 270)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "2"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1076,7 +1084,8 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
+					(hide yes)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4012,6 +4021,12 @@
 		(uuid "1992463b-0494-438f-adb9-cf18593d366c")
 	)
 	(junction
+		(at 168.91 261.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d5945f5-c356-4987-9520-52efe64bf161")
+	)
+	(junction
 		(at 281.94 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4561,7 +4576,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 252.73) (xy 228.6 252.73)
+			(xy 240.03 252.73) (xy 237.49 252.73)
 		)
 		(stroke
 			(width 0)
@@ -4721,7 +4736,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 265.43) (xy 242.57 265.43)
+			(xy 229.87 265.43) (xy 223.52 265.43)
 		)
 		(stroke
 			(width 0)
@@ -4851,7 +4866,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 265.43) (xy 228.6 265.43)
+			(xy 240.03 265.43) (xy 237.49 265.43)
 		)
 		(stroke
 			(width 0)
@@ -4931,7 +4946,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 252.73) (xy 236.22 252.73)
+			(xy 223.52 252.73) (xy 229.87 252.73)
 		)
 		(stroke
 			(width 0)
@@ -4941,7 +4956,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 265.43) (xy 218.44 265.43)
+			(xy 250.19 265.43) (xy 247.65 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5291,7 +5306,17 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 252.73) (xy 218.44 252.73)
+			(xy 168.91 261.62) (xy 170.18 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4037495-15c5-4699-ac25-276c1870b5bd")
+	)
+	(wire
+		(pts
+			(xy 250.19 252.73) (xy 247.65 252.73)
 		)
 		(stroke
 			(width 0)
@@ -5421,6 +5446,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 261.62) (xy 167.64 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8276822-2e2d-41bf-b717-7fb6b26bbfd8")
+	)
+	(wire
+		(pts
 			(xy 203.2 45.72) (xy 203.2 40.64)
 		)
 		(stroke
@@ -5501,16 +5536,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 73.66) (xy 111.76 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f834456c-cd53-44b4-ad1e-9b91c8e098d8")
-	)
-	(wire
-		(pts
 			(xy 261.62 137.16) (xy 275.59 137.16)
 		)
 		(stroke
@@ -5541,7 +5566,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 266.7) (xy 160.02 267.97)
+			(xy 167.64 266.7) (xy 167.64 267.97)
 		)
 		(stroke
 			(width 0)
@@ -5681,28 +5706,28 @@
 	)
 	(global_label "LED_2"
 		(shape input)
-		(at 242.57 265.43 0)
+		(at 223.52 265.43 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0fbfdb10-86ca-411a-869b-25627fb99ac0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.1794 265.43 0)
+			(at 214.9106 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "LED_2"
-		(shape input)
+		(shape output)
 		(at 161.29 177.8 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5746,7 +5771,7 @@
 		)
 	)
 	(global_label "SWDIO"
-		(shape input)
+		(shape bidirectional)
 		(at 233.68 213.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5757,7 +5782,7 @@
 		)
 		(uuid "3d0bf423-aa47-4d97-b403-bff881b4ec87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.5314 213.36 0)
+			(at 243.6427 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5768,23 +5793,23 @@
 		)
 	)
 	(global_label "VBUS"
-		(shape input)
-		(at 160.02 246.38 180)
+		(shape output)
+		(at 167.64 246.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "3daf8d00-bccf-480f-890a-e39ef170eb6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.1362 246.38 0)
+			(at 175.5238 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5812,7 +5837,7 @@
 		)
 	)
 	(global_label "D+"
-		(shape input)
+		(shape bidirectional)
 		(at 160.02 60.96 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5823,7 +5848,7 @@
 		)
 		(uuid "5d757991-7359-4a5d-ae7b-63d71a12143d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.1924 60.96 0)
+			(at 153.0811 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5834,51 +5859,51 @@
 		)
 	)
 	(global_label "SWDCLK"
-		(shape input)
-		(at 160.02 261.62 180)
+		(shape output)
+		(at 170.18 261.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "697eab10-6a32-4d37-9d2d-7661c64ac88c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.5358 261.62 0)
+			(at 180.6642 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "VEXT"
 		(shape input)
-		(at 160.02 251.46 180)
+		(at 167.64 251.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "75f68686-8003-43e2-b1c4-e02ef37a304b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.6201 251.46 0)
+			(at 175.0399 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "D-"
-		(shape input)
+		(shape bidirectional)
 		(at 160.02 63.5 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5889,7 +5914,7 @@
 		)
 		(uuid "78ace940-81bf-4234-96d2-948992398541")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.1924 63.5 0)
+			(at 153.0811 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5900,7 +5925,7 @@
 		)
 	)
 	(global_label "LED_1"
-		(shape input)
+		(shape output)
 		(at 161.29 172.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5922,29 +5947,29 @@
 		)
 	)
 	(global_label "SWDIO"
-		(shape input)
-		(at 160.02 256.54 180)
+		(shape bidirectional)
+		(at 167.64 256.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "bf12791d-1ed6-49ad-8ebf-493aa6212596")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.1686 256.54 0)
+			(at 177.6027 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "D-"
-		(shape input)
+		(shape bidirectional)
 		(at 120.65 154.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5955,7 +5980,7 @@
 		)
 		(uuid "e3f785f8-a931-445f-b59b-04ea49d404c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4776 154.94 0)
+			(at 127.5889 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5966,7 +5991,7 @@
 		)
 	)
 	(global_label "VBUS"
-		(shape input)
+		(shape output)
 		(at 93.98 142.24 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5989,22 +6014,22 @@
 	)
 	(global_label "LED_1"
 		(shape input)
-		(at 242.57 252.73 0)
+		(at 223.52 252.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f0183837-b690-43f5-9a40-ba0dd2cafdda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.1794 252.73 0)
+			(at 214.9106 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6032,7 +6057,7 @@
 		)
 	)
 	(global_label "D+"
-		(shape input)
+		(shape bidirectional)
 		(at 120.65 152.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6043,7 +6068,7 @@
 		)
 		(uuid "f796c27b-2644-420b-93be-a900eb6c653c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4776 152.4 0)
+			(at 127.5889 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6166,7 +6191,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 252.73 0)
+		(at 250.19 252.73 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6175,7 +6201,7 @@
 		(fields_autoplaced yes)
 		(uuid "023f2f6a-1483-488a-9de3-88e4a16d533d")
 		(property "Reference" "#PWR04"
-			(at 215.9 259.08 0)
+			(at 250.19 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6184,7 +6210,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 257.81 0)
+			(at 250.19 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6193,7 +6219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 252.73 0)
+			(at 250.19 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6202,7 +6228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 252.73 0)
+			(at 250.19 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6211,7 +6237,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 252.73 0)
+			(at 250.19 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6371,7 +6397,8 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 232.41 252.73 0)
+		(at 233.68 252.73 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6380,7 +6407,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bc9c02b-bc0d-4610-9faf-2b4bc0f57c43")
 		(property "Reference" "D2"
-			(at 230.8225 246.38 0)
+			(at 235.2675 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6388,7 +6415,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 230.8225 248.92 0)
+			(at 235.2675 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6396,7 +6423,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 232.41 252.73 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6405,7 +6432,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 252.73 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6414,7 +6441,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 232.41 252.73 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6423,7 +6450,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 252.73 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6432,7 +6459,7 @@
 			)
 		)
 		(property "JLC PN" "C165980"
-			(at 232.41 252.73 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7507,7 +7534,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 265.43 0)
+		(at 250.19 265.43 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7516,7 +7544,7 @@
 		(fields_autoplaced yes)
 		(uuid "6935d070-df84-45c6-9931-856bff3358c0")
 		(property "Reference" "#PWR015"
-			(at 215.9 271.78 0)
+			(at 250.19 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7525,7 +7553,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 270.51 0)
+			(at 250.19 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7534,7 +7562,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 265.43 0)
+			(at 250.19 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7543,7 +7571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 265.43 0)
+			(at 250.19 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7552,7 +7580,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 265.43 0)
+			(at 250.19 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,7 +7602,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 246.38 270)
+		(at 165.1 246.38 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7583,7 +7612,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b53e6aa-a7bd-44fe-941e-a16b25e2b008")
 		(property "Reference" "H1"
-			(at 166.37 245.1099 90)
+			(at 161.29 245.1099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7592,7 +7621,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 166.37 247.6499 90)
+			(at 161.29 247.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7601,7 +7630,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 162.56 246.38 0)
+			(at 165.1 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7610,7 +7639,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 246.38 0)
+			(at 165.1 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7619,7 +7648,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 246.38 0)
+			(at 165.1 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7913,7 +7942,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 266.7 270)
+		(at 165.1 266.7 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7922,7 +7952,7 @@
 		(fields_autoplaced yes)
 		(uuid "786a95ef-d6d1-4fc7-b4db-97100c57be15")
 		(property "Reference" "H5"
-			(at 166.37 265.4299 90)
+			(at 161.29 265.4299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7931,7 +7961,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 267.9699 90)
+			(at 161.29 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7940,7 +7970,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 162.56 266.7 0)
+			(at 165.1 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7949,7 +7979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 266.7 0)
+			(at 165.1 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7958,7 +7988,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 266.7 0)
+			(at 165.1 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8047,7 +8077,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 261.62 270)
+		(at 165.1 261.62 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8056,7 +8087,7 @@
 		(fields_autoplaced yes)
 		(uuid "83108078-becd-458d-bdb6-723a33cd8d91")
 		(property "Reference" "H4"
-			(at 166.37 260.3499 90)
+			(at 161.29 260.3499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8096,7 @@
 			)
 		)
 		(property "Value" "SWDCLK"
-			(at 166.37 262.8899 90)
+			(at 161.29 262.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8074,7 +8105,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 162.56 261.62 0)
+			(at 165.1 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8083,7 +8114,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 261.62 0)
+			(at 165.1 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8092,7 +8123,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 261.62 0)
+			(at 165.1 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9019,7 +9050,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 222.25 252.73 90)
+		(at 243.84 252.73 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9028,7 +9060,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3817dfc-7e4c-401d-a2e9-9bd68e4a5a5a")
 		(property "Reference" "R3"
-			(at 222.25 246.38 90)
+			(at 243.84 246.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9036,7 +9068,7 @@
 			)
 		)
 		(property "Value" "56"
-			(at 222.25 248.92 90)
+			(at 243.84 248.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9044,7 +9076,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 222.25 254.508 90)
+			(at 243.84 254.508 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9053,7 +9085,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 252.73 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9062,7 +9094,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 222.25 252.73 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9071,7 +9103,7 @@
 			)
 		)
 		(property "JLC PN" "C784160"
-			(at 222.25 252.73 90)
+			(at 243.84 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9096,7 +9128,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 267.97 0)
+		(at 167.64 267.97 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9105,7 +9138,7 @@
 		(fields_autoplaced yes)
 		(uuid "c461f580-aee4-40f7-91e5-0c96485f5dcb")
 		(property "Reference" "#PWR06"
-			(at 160.02 274.32 0)
+			(at 167.64 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9114,7 +9147,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 273.05 0)
+			(at 167.64 273.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9123,7 +9156,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 267.97 0)
+			(at 167.64 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9132,7 +9165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 267.97 0)
+			(at 167.64 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9141,7 +9174,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 267.97 0)
+			(at 167.64 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9156,6 +9189,73 @@
 			(project "rf-dongle"
 				(path "/2e413e6d-2043-4496-9952-aaa6272cc89e"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 168.91 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4b9eb42-cecb-4afb-95cd-5a561801ff31")
+		(property "Reference" "#FLG04"
+			(at 168.91 259.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 168.91 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 168.91 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9927d986-7f84-4056-be1d-018c6b8503df")
+		)
+		(instances
+			(project "rf-dongle"
+				(path "/2e413e6d-2043-4496-9952-aaa6272cc89e"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -9232,7 +9332,8 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 232.41 265.43 0)
+		(at 233.68 265.43 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9241,7 +9342,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6c2a818-e68f-45c7-ae96-90f6c64bc160")
 		(property "Reference" "D3"
-			(at 230.8225 259.08 0)
+			(at 235.2675 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9249,7 +9350,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 230.8225 261.62 0)
+			(at 235.2675 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9257,7 +9358,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 232.41 265.43 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9266,7 +9367,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 265.43 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9275,7 +9376,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 232.41 265.43 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9284,7 +9385,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 265.43 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9293,7 +9394,7 @@
 			)
 		)
 		(property "JLC PN" "C165979"
-			(at 232.41 265.43 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9318,7 +9419,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 251.46 270)
+		(at 165.1 251.46 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9327,7 +9429,7 @@
 		(fields_autoplaced yes)
 		(uuid "de02dd70-b02d-4873-a3db-65c6c4cd2343")
 		(property "Reference" "H2"
-			(at 166.37 250.1899 90)
+			(at 161.29 250.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9336,7 +9438,7 @@
 			)
 		)
 		(property "Value" "VEXT"
-			(at 166.37 252.7299 90)
+			(at 161.29 252.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9345,7 +9447,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 162.56 251.46 0)
+			(at 165.1 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9354,7 +9456,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 251.46 0)
+			(at 165.1 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9363,7 +9465,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 251.46 0)
+			(at 165.1 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9662,75 +9764,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 118.11 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5519530-9d6b-4a13-9c4c-dee3ddd55a18")
-		(property "Reference" "#PWR07"
-			(at 118.11 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc0f9ff1-62dd-4054-8969-f0c96cc860ae")
-		)
-		(instances
-			(project "rf-dongle"
-				(path "/2e413e6d-2043-4496-9952-aaa6272cc89e"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 256.54 270)
+		(at 165.1 256.54 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9739,7 +9775,7 @@
 		(fields_autoplaced yes)
 		(uuid "e716e88e-7b01-40a1-b3e1-32d5272fdac2")
 		(property "Reference" "H3"
-			(at 166.37 255.2699 90)
+			(at 161.29 255.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9748,7 +9784,7 @@
 			)
 		)
 		(property "Value" "SWDIO"
-			(at 166.37 257.8099 90)
+			(at 161.29 257.8099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9757,7 +9793,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 162.56 256.54 0)
+			(at 165.1 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9766,7 +9802,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 256.54 0)
+			(at 165.1 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9775,7 +9811,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 256.54 0)
+			(at 165.1 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9931,7 +9967,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 222.25 265.43 90)
+		(at 243.84 265.43 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9940,7 +9977,7 @@
 		(fields_autoplaced yes)
 		(uuid "f870f7a1-f2eb-4ed2-a387-06b8a5b99877")
 		(property "Reference" "R4"
-			(at 222.25 259.08 90)
+			(at 243.84 259.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9948,7 +9985,7 @@
 			)
 		)
 		(property "Value" "56"
-			(at 222.25 261.62 90)
+			(at 243.84 261.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9956,7 +9993,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 222.25 267.208 90)
+			(at 243.84 267.208 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9965,7 +10002,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 265.43 0)
+			(at 243.84 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9974,7 +10011,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 222.25 265.43 0)
+			(at 243.84 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9983,7 +10020,7 @@
 			)
 		)
 		(property "JLC PN" "C784160"
-			(at 222.25 265.43 90)
+			(at 243.84 265.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
