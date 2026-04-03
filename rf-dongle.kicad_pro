@@ -65,19 +65,35 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|48300000|46560000|d7f32237-2bad-47d7-a1d7-80927ddb83af|cdae2f47-89e4-4349-ba8c-b71e90612933",
+          "clearance|48300000|46135000|d7f32237-2bad-47d7-a1d7-80927ddb83af|cdae2f47-89e4-4349-ba8c-b71e90612933",
           ""
         ],
         [
-          "clearance|50245000|45445000|afc27a73-0310-4d50-93b7-c55f118e460a|7d1b14d5-185e-4d1c-95c3-ac123f38dbb2",
+          "clearance|50145000|45195000|afc27a73-0310-4d50-93b7-c55f118e460a|7d1b14d5-185e-4d1c-95c3-ac123f38dbb2",
           ""
         ],
         [
-          "items_not_allowed|56400000|39750000|be5448e7-69d7-4797-ae12-68bfb13eac3b|00000000-0000-0000-0000-000000000000",
-          "Antenna is the only exception to this rule"
+          "copper_edge_clearance|20050000|43050000|23c41920-55ab-456f-87ee-7367a26f31dd|3ce2cb60-701e-4925-b61c-f3bc5e7b1d5b",
+          ""
         ],
         [
-          "items_not_allowed|56400000|42650000|3ceddcae-272b-4760-9279-672a9a539690|00000000-0000-0000-0000-000000000000",
+          "copper_edge_clearance|20050000|50550000|23c41920-55ab-456f-87ee-7367a26f31dd|501baaf4-a64b-46dc-9a4a-807ef4060db8",
+          ""
+        ],
+        [
+          "courtyards_overlap|28348938|42763951|75953aaa-de7b-493d-bcc6-09978264d81b|8c3ef461-4e67-4346-9c07-087595952b96",
+          ""
+        ],
+        [
+          "courtyards_overlap|30848938|42763951|67a5355d-e63e-47c8-a034-9aebcc4b5ee8|8c3ef461-4e67-4346-9c07-087595952b96",
+          ""
+        ],
+        [
+          "items_not_allowed|50700000|52150000|3ceddcae-272b-4760-9279-672a9a539690|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|51350000|55155769|be5448e7-69d7-4797-ae12-68bfb13eac3b|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
