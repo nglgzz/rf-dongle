@@ -5,13 +5,6 @@ USB type-A dongle based on the nRF52840 microcontroller.
 This dongle is meant to run the [COB firmware](https://github.com/nglgzz/cob_firmware),
 though technically you can flash whatever you want on it.
 
-> [!CAUTION]
->
-> **Use at your own risk.**
->
-> This PCB is not fully functional (i.e. USB GND pad is not
-> connected and USB data lines aren't working).
-
 ## Current state
 
 **What works**
@@ -25,15 +18,16 @@ though technically you can flash whatever you want on it.
   tried both sending and receiving packets across a room (5-ish meters with a
   wall in between) and it worked fine and that's more than enough for my
   application.
-- With the GND workaround mentioned below, USB power is working and the device
-  gets detected by the host.
+- USB power is working, the device gets detected by the host, and it can
+  enumerate as a HID device (haven't tried other USB 2.0 classes, but they
+  should in theory work).
 
-**What's broken**
+**What needs improvement**
 
-- The USB GND pad is disconnected from the rest of the circuit (a workaround is
-  to wire the pad to another GND pad in the vicinity).
-- The USB enumeration is not working, I suspect something is wrong with the data
-  lines but need to test more.
+- The USB connector (PCB trace) is quite thin, and in some USB ports it doesn't
+  make a solid connection. One workaround is to add some tape on the underside
+  of the PCB to increase its thickness. Need to figure out a neater solution
+  though.
 
 ## Pics
 
